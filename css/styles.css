@@ -1,0 +1,108 @@
+﻿/*******************************************************************************
+ * General Styles
+ ******************************************************************************/
+
+body {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+  body.smallScreen {
+    width: 1250px;
+    height: 900px;
+  }
+
+body {
+  font-family: 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 0.875em;
+  line-height: 1.35;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI Light', 'Segoe UI', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: 100;
+  line-height: 1.167;
+  color: #707070;
+}
+
+h2, h3 {
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: #DB7100;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+iframe {
+  overflow: hidden;
+}
+
+/*******************************************************************************
+ * Title Bar
+ ******************************************************************************/
+
+#titleBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-width: 0 0 1px 0;
+  padding: 0 10px;
+  height: 48px;
+  overflow: hidden;
+}
+
+  #titleBar h1 {
+    padding: 0;
+    margin: 0 12px 0 0;
+    line-height: 48px;
+    display: inline;
+  }
+
+  #titleBar h2 {
+    font-size: 16px;
+    display: inline;
+  }
+
+/*******************************************************************************
+ * Viz Area
+ ******************************************************************************/
+
+#tableauVizArea {
+  position: absolute;
+  left: 12px;
+  top: 60px;
+  right: 12px;
+  bottom: 12px;
+  border: 2px dotted #DB7100;
+}
+
+  #tableauVizArea .placeholder {
+    font-size: 1.5em;
+    font-weight: 100;
+    line-height: 1.167;
+    color: #707070;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.75em;
+    margin-left: -75px;
+    width: 150px;
+    text-align: center;
+  }
+
+#tableauViz {
+  position: relative;
+}
