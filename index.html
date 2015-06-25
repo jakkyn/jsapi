@@ -1,24 +1,67 @@
-﻿<!DOCTYPE html>
+﻿    <!-- borrowed from Russell Christopher http://russellchristopher.me/htdocs2/htdocs/index.html -->
+
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Tableau JavaScript API Training</title>
   <link type="image/vnd.microsoft.icon" href="../jsapi/favicon.ico" rel="shortcut icon" />
   <link type="text/css" rel="stylesheet" href="../jsapi/css/smoothness/jquery-ui-1.10.0.custom.css" />
   <link type="text/css" rel="stylesheet" href="../jsapi/css/styles.css" />
-  <script src="../jsapi/js/jquery-1.11.2.js"></script>
+  <link type="text/css" rel="stylesheet" href="../jsapi/css/reference.css" />
+
+  <script src="../jsapi/js/jquery-1.8.2.min.js"></script>
   <script src="../jsapi/js/jquery-ui-1.10.0.custom.js"></script>
-  <script src="http://public.tableau.com/javascripts/api/tableau-2.0.0.js"></script>
+  <script src="../jsapi/js/jquery.layout-latest.min.js"></script>
+
+  <script src="../jsapi/js/data.js"></script>
+  <script src="../jsapi/js/utilities.js"></script>
+  <script src="../jsapi/js/workingScript.js"></script>
+    <!-- to add to workingScript.js -->
   <script src="tutorial.js"></script>
+  
+  <script src="http://public.tableau.com/javascripts/api/tableau-2.0.0.js"></script>
+
 </head>
-<body>
-  <div id="titleBar">
-    <h1>Tableau JavaScript API Training</h1>
-    <h2>bootcamp - march 5, 2015</h2>
+<body class="notsmallScreen">
+  <div id="layoutContainer" class="fillMyContainer">
+
+    <div id="titleBar" class="ui-layout-north">
+      <h1>Tableau JavaScript API Training</h1>
+      <h2 id="h2">...Hover over each item to learn what it will do</h2>
+    </div>
+
+    <div id="westPane" class="ui-layout-west">
+      <div id="tasksSideBar" class="ui-layout-center"></div>
+      <div id="consoleContainer" class="ui-layout-center">
+        <hr><div id="outputType">Output to:
+          <div >
+            <input type="radio" class="tasksSideBar" name="alertOrConsole" value="Alert" checked>
+            <label for="alertorConsole">Alert</label><br>
+            <input type="radio" class="tasksSideBar" name="alertOrConsole" value="Console">
+            <label for="alertorConsole">Console</label>
+          </div>
+        </div>    
+      </div>
+    </div>
+
+   <div id="vizsSectionLayoutContainer" class="ui-layout-center">
+      <div id="tableauVizArea" class="ui-layout-center">
+        <div id="tableauViz"></div>
+      </div>
+    </div> 
+
+    <div id="footer" class="ui-layout-south"><a target="_blank" href='http://www.tableausoftware.com/contact'>
+      Contact</a> | 206.633.3400 | <a target="_blank" href='http://www.tableausoftware.com/tos'>
+        Terms of Use</a> | <a target="_blank" href='http://www.tableausoftware.com/privacy'>
+          Privacy</a> | <a target="_blank" href='http://www.tableausoftware.com/ip'>Patent &
+            Other IP</a> | © 2003-2012 Tableau Software. All Rights Reserved.</div>
   </div>
-  <div id="dialog" title="Selected Marks"></div>
-  <div id="tableauVizArea">
-    <div class="placeholder" style="display:none">Viz goes here</div>
-    <div id="tableauViz"></div>
-  </div>
+<!--   <div id="dialog" title="Selected Marks" style="display: none"></div>
+  <p>0 marks selected</p>
+  </div> -->
+   <script type="text/javascript">
+    // Initialize the app on document ready.
+    $(initialize);
+  </script>
 </body>
 </html>

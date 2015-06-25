@@ -2,7 +2,7 @@
 // Global Variables
 
 var viz, workbook, activeSheet;
-var url = "http://sarnold_train/views/WorldIndicators/GDPperCapitaDashboard";
+var url = "http://10.32.150.148/views/WorldIndicators/GDPperCapitaDashboard";
 
 ////////////////////////////////////////////////////////////////////////////////
 // 1 - Create a View
